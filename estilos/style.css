@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #0B0F19;
+    --cor-fundo-cards-sesoes: #161B26;
+    --cor-texto-principal: #E2E8F0;
+    --cor-destaque-primario: #00F5FF;
+    --cor-destaque-secundario:#3B82F6;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'Space Grotesk' , sans-serif;
+}
+
+#foto-perfil{
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+
+.card{
+    background-color: var(--cor-fundo-cards-sesoes);
+    color:var(--cor-texto-principal);
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-destaque-primario);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer{
+    color: var(--cor-texto-principal);
+}
