@@ -22,11 +22,22 @@ header nav{
     gap: 20px;
     justify-content: flex-end;
     flex-wrap: wrap;
-    @media (max-width:750px){
+}
+
+@media (max-width:750px) {
+    header nav{
         gap: 2px;
         padding: 0;
     }
+    #hero{
+        align-items:start;
+        flex-direction: column;
+    }
+    #foto-perfil{
+        height: 150px;
+    }
 }
+    
 
 :root{
     --cor-fundo: #0B0F19;
@@ -70,11 +81,6 @@ body{
     display:flex;
     gap: 15px;
     align-items: center;
-    @media(max-width: 750px){
-        align-items:start;
-        flex-direction: column;
-    }
-
 }
 
 #txt-hero{
@@ -88,9 +94,6 @@ body{
     height: 200px;
     width: auto;
     border-radius: 50%;
-    @media(max-width: 750px){
-        height: 150px;
-    }
     }
 
 
