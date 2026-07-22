@@ -9,6 +9,10 @@
     
 }
 
+a {
+    color:var(--cor-destaque-primario);
+    text-decoration: none;
+}
 header{
     padding: 15px 30px;
 }
@@ -17,7 +21,11 @@ header nav{
     display: flex;
     gap: 20px;
     justify-content: flex-end;
-    
+    flex-wrap: wrap;
+    @media (max-width:750px){
+        gap: 2px;
+        padding: 0;
+    }
 }
 
 :root{
@@ -29,17 +37,23 @@ header nav{
 }
 .link-menu {
     background-color: var(--cor-fundo-cards-sesoes);
-    color: var(--cor-texto-principal);
+    color: var(--cor-destaque-primario);
     border: solid 1px rgb(71, 71, 71);
     border-radius: 5px;
     padding: 5px;
     text-decoration: none;
+    
 }
 body{
     background-color: var(--cor-fundo);
     font-family: 'Space Grotesk' , sans-serif;
     margin:0 15px
 }
+
+#sobre{
+     max-width: 1000px;
+}
+
  #blocos-habilidade-geral{
     display: flex;
     justify-content: center;
@@ -56,6 +70,10 @@ body{
     display:flex;
     gap: 15px;
     align-items: center;
+    @media(max-width: 750px){
+        align-items:start;
+        flex-direction: column;
+    }
 
 }
 
@@ -63,14 +81,17 @@ body{
     display:flex;
     align-items:flex-start;
     flex-direction: column;
-    
+   
 }
 
 #foto-perfil{
     height: 200px;
     width: auto;
     border-radius: 50%;
-}
+    @media(max-width: 750px){
+        height: 150px;
+    }
+    }
 
 
 
