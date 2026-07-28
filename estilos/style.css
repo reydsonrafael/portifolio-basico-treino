@@ -70,8 +70,8 @@ body{
 }
 
 main{
-    display: flex;
     gap: 20px;
+
 }
 
 #sobre_e_habilidade{
@@ -82,7 +82,7 @@ main{
 
 #sobre{
      flex:2;
-     margin: 0;
+     
 }
 #habilidades{
     flex: 1;
@@ -114,6 +114,7 @@ main{
 
 .bloco-habilidade img{
     height: 60px;
+    width: 60px;
 }
 
 #hero{
@@ -131,7 +132,7 @@ main{
 
 #foto-perfil{
     height: 200px;
-    width: auto;
+    width: 200px;
     border-radius: 50%;
     }
 
