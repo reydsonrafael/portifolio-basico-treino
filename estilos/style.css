@@ -36,8 +36,16 @@ header nav{
     #foto-perfil{
         height: 150px;
     }
+
 }
-    
+ 
+@media(max-width:1335px){
+    #sobre_e_habilidade{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 
 :root{
     --cor-fundo: #0B0F19;
@@ -58,18 +66,23 @@ header nav{
 body{
     background-color: var(--cor-fundo);
     font-family: 'Space Grotesk' , sans-serif;
-    margin:0 15px
+    margin:0 15px;
+}
+
+main{
+    display: flex;
+    gap: 20px;
 }
 
 #sobre_e_habilidade{
     display: flex;
     flex-wrap:wrap;
+    gap: 20px;
 }
 
 #sobre{
-     max-width: 1000px;
-     
-     margin-right: 20px;
+     flex:2;
+     margin: 0;
 }
 #habilidades{
     flex: 1;
@@ -85,6 +98,22 @@ body{
 
 .bloco-habilidade{
     border: solid 2px var(--cor-destaque-primario);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.bloco-habilidade:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--cor-destaque-primario);
+}
+
+
+.bloco-habilidade img{
+    height: 60px;
 }
 
 #hero{
