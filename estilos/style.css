@@ -35,8 +35,7 @@ header nav{
     }
     #foto-perfil{
         height: 150px;
-    }
-
+    } 
 }
  
 @media(max-width:1335px){
@@ -44,6 +43,17 @@ header nav{
         display: flex;
         flex-direction: column;
         
+    }
+}
+@media (max-width:549px){
+#representacao-projetos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
@@ -82,7 +92,7 @@ main{
 
 #sobre{
      flex:2;
-     
+     text-align: justify;
 }
 #habilidades{
     flex: 2;
@@ -180,9 +190,10 @@ main{
 
 .conteudo-projetos{
     background-color: white;
-    width: 300px;
+    width: 200px;
     margin: 5px;;
     padding: 10px;
+    border-radius: 20px;
 }
 
 #contato ul{
