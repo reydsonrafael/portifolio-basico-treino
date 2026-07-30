@@ -64,6 +64,10 @@ header nav{
     --cor-destaque-primario: #00F5FF;
     --cor-destaque-secundario:#3B82F6;
 }
+
+h2{
+    margin-bottom: 20px;
+}
 .link-menu {
     background-color: var(--cor-fundo-cards-sesoes);
     color: var(--cor-destaque-primario);
@@ -195,7 +199,9 @@ main{
     padding: 10px;
     border-radius: 20px;
 }
-
+#contato img{
+width: 40px;
+}
 #contato ul{
     padding-left: 20px;
 }
